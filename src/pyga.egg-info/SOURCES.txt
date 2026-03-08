@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/bsearch/__init__.py
+src/bsearch/bsearch.py
+src/pyga.egg-info/PKG-INFO
+src/pyga.egg-info/SOURCES.txt
+src/pyga.egg-info/dependency_links.txt
+src/pyga.egg-info/requires.txt
+src/pyga.egg-info/top_level.txt
+tests/test_bsearch.py

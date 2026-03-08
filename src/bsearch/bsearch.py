@@ -1,13 +1,16 @@
 class BinarySearch:
-
-    def search(needle, haystack):
+    def search(self, needle, haystack):
         haystack.sort()
-        mid = haystack.len / 2
-        current_item = haystack[mid]
-        if (current_item == needle):
-            return mid
-        elif (current_item < needle):
-            search(needle, haystack[mid..haystack.len])
-        else:
-            search(needle, haystack[0..mid])
+        low = 0
+        high = len(haystack) - 1
 
+        while low <= high:
+            mid = (low + high) // 2
+            guess = haystack[mid]
+            if guess == needle:
+                return mid
+            if guess > needle:
+                high = mid - 1
+            else:
+                low = mid + 1
+        return None
